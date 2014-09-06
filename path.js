@@ -55,8 +55,12 @@ localStorage.setItem("box4Num", count4);
 		box3.checked = false;
 		box4.checked = false;
 	}
-	if(count1 + count2 + count3 + count4 == 1){
-		alert("Yay");
+	if((count1 + count2 + count3 + count4) + 1 === 1){
+		title.innerHTML = 'What is Your Favorite Genre?';
+		one.innerHTML = 'Comedy';
+		two.innerHTML = 'Horror';
+		three.innerHTML = 'Thriller';
+		four.innerHTML = 'Drama';
 	}
 	}
 	
