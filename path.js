@@ -16,7 +16,9 @@ var count2 = 0;
 var count3 = 0;
 var count4 = 0;
 beginBut.addEventListener('click', function(){
-	beginBut.style.visibility = 'hidden';
+	beginBut.style.display = 'none';
+	image.style.display = 'none';
+	title.style.display = 'inherit'
 	subTitle.style.display = 'none';
 	options.style.display = 'inherit';
 	title.innerHTML = 'Choose The Emotion That Best Fits You'
@@ -43,14 +45,18 @@ localStorage.setItem("box4Num", count4);
 })
 	function q2(){
 		if(one.innerHTML == 'Happy'){
-		title.innerHTML = 'Out of the Choices Below, What Are Your Favorite Genres?';
-		one.innerHTML = 'Comedy';
-		two.innerHTML = 'Horror';
-		three.innerHTML = 'Thriller';
-		four.innerHTML = 'Drama';
+		title.style.visibility = 'true';
+		one.innerHTML = 'Happy';
+		two.innerHTML = 'Sad';
+		three.innerHTML = 'Angry';
+		four.innerHTML = 'Confused';
 		box1.checked = false;
 		box2.checked = false;
 		box3.checked = false;
 		box4.checked = false;
 	}
+	if(count1 + count2 + count3 + count4 == 1){
+		alert("Yay");
 	}
+	}
+	
