@@ -56,7 +56,11 @@ localStorage.setItem("box4Num", count4);
 		box4.checked = false;
 	}
 	if(count1 + count2 + count3 + count4 == 1){
-		alert("Yay");
+		title.innerHTML = 'true';
+		one.innerHTML = 'hi';
+		two.innerHTML = 'hi';
+		three.innerHTML = 'hi';
+		four.innerHTML = 'hi';
 	}
 	}
 	
