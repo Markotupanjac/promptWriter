@@ -1,7 +1,7 @@
 var beginBut = document.getElementById("begin");
 var title = document.getElementById("Title");
 var subtitle = document.getElementById("subTitle");
-var stuff = document.getElementById("stuff");
+var options = document.getElementById("options");
 var one = document.getElementById("one");
 var two = document.getElementById("two");
 var three = document.getElementById("three");
@@ -11,7 +11,6 @@ var box2 = document.getElementById("B");
 var box3 = document.getElementById("C");
 var box4 = document.getElementById("D");
 var input = document.getElementsByTagName("input");
-var yay = document.getElementById("yay");
 var count1 = 0;
 var count2 = 0;
 var count3 = 0;
@@ -19,10 +18,10 @@ var count4 = 0;
 beginBut.addEventListener('click', function(){
 	beginBut.style.display = 'none';
 	image.style.display = 'none';
-	title.style.display = 'inherit';
+	title.style.display = 'inherit'
 	subTitle.style.display = 'none';
-	yay.style.display = 'inherit';
-	
+	options.style.display = 'inherit';
+	title.innerHTML = 'Choose The Emotion That Best Fits You'
 });
 box1.addEventListener('click', function(){
 count1++;
@@ -57,11 +56,7 @@ localStorage.setItem("box4Num", count4);
 		box4.checked = false;
 	}
 	if(count1 + count2 + count3 + count4 == 1){
-		title.innerHTML = 'true';
-		one.innerHTML = 'hi';
-		two.innerHTML = 'hi';
-		three.innerHTML = 'hi';
-		four.innerHTML = 'hi';
+		alert("Yay");
 	}
 	}
 	
