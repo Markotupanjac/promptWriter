@@ -62,5 +62,16 @@ localStorage.setItem("box4Num", count4);
 		three.innerHTML = 'Thriller';
 		four.innerHTML = 'Drama';
 	}
+	if((count1 + count2 + count3 + count4) + 1 === 2){
+		title.innerHTML = 'What would you do if confronted by a grizzly bear?';
+		one.innerHTML = 'Juggle for the bear in hopes of distracting him';
+		two.innerHTML = 'Run for your life into an abandoned house';
+		three.innerHTML = 'Fight that furry beast with a knife';
+		four.innerHTML = 'Sacrafice your friend to save your life';
+		box1.checked = false;
+		box2.checked = false;
+		box3.checked = false;
+		box4.checked = false;
+	}
 	}
 	
