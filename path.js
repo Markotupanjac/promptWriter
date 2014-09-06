@@ -1,7 +1,7 @@
 var beginBut = document.getElementById("begin");
 var title = document.getElementById("Title");
 var subtitle = document.getElementById("subTitle");
-var options = document.getElementById("options");
+var stuff = document.getElementById("stuff");
 var one = document.getElementById("one");
 var two = document.getElementById("two");
 var three = document.getElementById("three");
@@ -11,6 +11,7 @@ var box2 = document.getElementById("B");
 var box3 = document.getElementById("C");
 var box4 = document.getElementById("D");
 var input = document.getElementsByTagName("input");
+var yay = document.getElementById("yay");
 var count1 = 0;
 var count2 = 0;
 var count3 = 0;
@@ -18,10 +19,10 @@ var count4 = 0;
 beginBut.addEventListener('click', function(){
 	beginBut.style.display = 'none';
 	image.style.display = 'none';
-	title.style.display = 'inherit'
+	title.style.display = 'inherit';
 	subTitle.style.display = 'none';
-	options.style.display = 'inherit';
-	title.innerHTML = 'Choose The Emotion That Best Fits You'
+	yay.style.display = 'inherit';
+	
 });
 box1.addEventListener('click', function(){
 count1++;
