@@ -118,6 +118,11 @@ function q2(){
 		box3.checked = false;
 		box4.checked = false;
 	} 
+	if(count1 + 1 > 3){
+    title.innerHTML = 'You Tested To Be In A Relaxed/Comeical State of Mind, Try Writing About This: A Mime is a witness to a murder, explain how he tells the police of what he saw. Remember: Mimes cannot speak.';
+    options.style.display = 'none';
+    title.style.fontSize = '40px';
+}
 	}
 
 	
