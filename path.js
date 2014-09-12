@@ -3,10 +3,10 @@ var Comedy = [
 "A Mime is a witness to a murder, explain how he tells the police of what he saw. Remember: Mimes cannot speak.",
 ];
 var Horror = [
-	"A wife kills her husband, mae the reader sympathize with both characters.",
+	"A wife kills her husband, make the reader sympathize with both characters.",
 	"A suicide hotline operator realizes that the person he's talking down is a wanted serial killer",
 	"You've just been selected for jury duty. As the trial begins, the opening prosecutor details a gruesome murder that you instantly recognize..because you committed it and the defendant is being framed.",
-	"A crazy man get admitted to a mental institution where he meets another crazy man who hears the same voices as him. Write of the man's expierence.",
+	"A crazy man gets admitted to a mental institution where he meets another crazy man who hears the same voices as him. Write of the man's expierence.",
 	"You are legally allowed to commit murder once, but you must fill out the proper paperwork and your proposed victim will be notified of your intentions",
 ];
 var Thriller = [
@@ -37,6 +37,12 @@ var count1 = 0;
 var count2 = 0;
 var count3 = 0;
 var count4 = 0;
+var math1 = Math.random();
+var math2 = Math.random();
+var math3 = Math.random();
+var math4 = Math.random();
+
+
 beginBut.addEventListener('click', function(){
 	beginBut.style.display = 'none';
 	image.style.display = 'none';
@@ -118,11 +124,41 @@ function q2(){
 		box3.checked = false;
 		box4.checked = false;
 	} 
-	if(count1 + 1 > 3){
-    title.innerHTML = 'You Tested To Be In A Relaxed/Comeical State of Mind, Try Writing About This: A Mime is a witness to a murder, explain how he tells the police of what he saw. Remember: Mimes cannot speak.';
+	if(count1 + 1 >= 3){
+		if(Math.random()<=0.5){
+    title.innerHTML = 'You Tested To Be In A Relaxed/Comical State of Mind, Try Writing About This: ' + " "  + Comedy[0];
+    options.style.display = 'none';
+    title.style.fontSize = '40px';
+}else{
+	title.innerHTML = "You Tested To Be In A Relaxed/Comical State of Mind, Try Writing About This:" + " " + Comedy[1];
+	options.style.display = 'none';
+    title.style.fontSize = '40px';
+}
+}
+
+if(count2 + 1 >= 3){
+		if(math1 <= 0.25){
+    title.innerHTML = 'You Tested To Be In A Stressed/Nervous State of Mind, Try Writing About This: ' + " "  + Horror[0];
     options.style.display = 'none';
     title.style.fontSize = '40px';
 }
+else if(0.25 < math1 <= 0.50){
+	title.innerHTML = "You Tested To Be In A Stressed/Nervous State of Mind, Try Writing About This:" + " " + Horror[1];
+	options.style.display = 'none';
+    title.style.fontSize = '40px';
+}
+ else if(0.5 < math1 <= 0.75){
+	title.innerHTML = "You Tested To Be In A Stressed/Nervous State of Mind, Try Writing About This:" + " " + Horror[2];
+	options.style.display = 'none';
+    title.style.fontSize = '40px';
+}
+else if(0.75 < math1 <= 1){
+	title.innerHTML = "You Tested To Be In A Stressed/Nervous State of Mind, Try Writing About This:" + " " + Horror[3];
+	options.style.display = 'none';
+    title.style.fontSize = '40px';
+}
 	}
+}
+
 
 	
