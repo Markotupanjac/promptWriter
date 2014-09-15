@@ -38,9 +38,6 @@ var count2 = 0;
 var count3 = 0;
 var count4 = 0;
 var math1 = Math.random();
-var math2 = Math.random();
-var math3 = Math.random();
-var math4 = Math.random();
 
 
 beginBut.addEventListener('click', function(){
@@ -137,27 +134,86 @@ function q2(){
 }
 
 if(count2 + 1 >= 3){
-		if(math1 <= 0.25){
+		if(math1 <= 0.20){
     title.innerHTML = 'You Tested To Be In A Stressed/Nervous State of Mind, Try Writing About This: ' + " "  + Horror[0];
     options.style.display = 'none';
     title.style.fontSize = '40px';
 }
-else if(0.25 < math1 <= 0.50){
+else if(0.20 < math1 <= 0.40){
 	title.innerHTML = "You Tested To Be In A Stressed/Nervous State of Mind, Try Writing About This:" + " " + Horror[1];
 	options.style.display = 'none';
     title.style.fontSize = '40px';
 }
- else if(0.5 < math1 <= 0.75){
+ else if(0.4 < math1 <= 0.6){
 	title.innerHTML = "You Tested To Be In A Stressed/Nervous State of Mind, Try Writing About This:" + " " + Horror[2];
 	options.style.display = 'none';
     title.style.fontSize = '40px';
 }
-else if(0.75 < math1 <= 1){
+else if(0.6 < math1 <= 0.8){
 	title.innerHTML = "You Tested To Be In A Stressed/Nervous State of Mind, Try Writing About This:" + " " + Horror[3];
+	options.style.display = 'none';
+    title.style.fontSize = '40px';
+}else if(0.8 < math1 <= 1){
+	title.innerHTML = "You Tested To Be In A Stressed/Nervous State of Mind, Try Writing About This:" + " " + Horror[4];
 	options.style.display = 'none';
     title.style.fontSize = '40px';
 }
 	}
+	if(count3 + 1 >= 3){
+		if(math1 <= 0.25){
+    title.innerHTML = 'You Tested To Be In An Excited State of Mind, Try Writing About This: ' + " "  + Thriller[0];
+    options.style.display = 'none';
+    title.style.fontSize = '40px';
+}
+else if(0.25 < math1 <= 0.50){
+	title.innerHTML = "You Tested To Be In An Excited State of Mind, Try Writing About This:" + " " + Thriller[1];
+	options.style.display = 'none';
+    title.style.fontSize = '40px';
+}
+ else if(0.5 < math1 <= 0.75){
+	title.innerHTML = "You Tested To Be In An Excited State of Mind, Try Writing About This:" + " " + Thriller[2];
+	options.style.display = 'none';
+    title.style.fontSize = '40px';
+}
+else if(0.75 < math1 <= 1){
+	title.innerHTML = "You Tested To Be In An Excited State of Mind, Try Writing About This:" + " " + Thriller[3];
+	options.style.display = 'none';
+    title.style.fontSize = '40px';
+}
+	}
+	if(count4 + 1 >= 3){
+		if(math1 <= 0.33){
+    title.innerHTML = 'You Tested To Be In An Dramatic/Disoriented State of Mind, Try Writing About This: ' + " "  + Drama[0];
+    options.style.display = 'none';
+    title.style.fontSize = '40px';
+}
+else if(0.33 < math1 <= 0.66){
+	title.innerHTML = "You Tested To Be In An Dramatic/Disoriented State of Mind, Try Writing About This:" + " " + Drama[1];
+	options.style.display = 'none';
+    title.style.fontSize = '40px';
+}
+ else if(0.66 < math1 <= 1){
+	title.innerHTML = "You Tested To Be In An Dramatic/Disoriented State of Mind, Try Writing About This:" + " " + Drama[2];
+	options.style.display = 'none';
+    title.style.fontSize = '40px';
+}
+
+}
+if(count1 + count2 + 1 >= 4){
+
+if(math1 <= 0.5){
+	title.innerHTML = "You Tested To Be In An Relaxed/monkey State of Mind, Try Writing About This:" + " " + Comedy[Math.floor((Math.random()*2))];
+	options.style.display = 'none';
+    title.style.fontSize = '40px';
+}
+else{
+	title.innerHTML = "You Tested To Be In An Stressed State of Mind, Try Writing About This:" + " " + Horror[Math.floor((Math.random()*5))];
+	options.style.display = 'none';
+    title.style.fontSize = '40px';
+}
+
+}
+
 }
 
 
